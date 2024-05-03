@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer } from "react";
-import { reducer } from "../constants/reducer";
+import { reducer } from "./reducer";
 
 const Ctx = createContext({});
 
