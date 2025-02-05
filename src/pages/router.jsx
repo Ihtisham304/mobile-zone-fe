@@ -3,19 +3,11 @@ import { Route, Routes } from "react-router-dom";
 import { ROUTES } from "../constants/routes";
 //Components
 import { Button } from "@/components/ui/button";
+import Login from "./auth/login";
 export function Router({}) {
   return (
     <Routes>
-      <Route
-        element={
-          <div className="">
-            Home Page
-            <Button variant="primary">Ad</Button>
-          </div>
-        }
-        path={ROUTES.homePage}
-      />
-      <Route element={<h2>About</h2>} path={ROUTES.aboutPage} />
+      <Route element={<Login />} path={ROUTES.homePage} />
     </Routes>
   );
 }
